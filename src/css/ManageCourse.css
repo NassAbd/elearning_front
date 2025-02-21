@@ -1,0 +1,120 @@
+/* 🎨 Conteneur principal */
+.manage-course-container {
+    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  
+  /* 🏆 Titres */
+  .manage-course-title,
+  .manage-quiz-title {
+    text-align: center;
+    color: #e0876a;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* 📝 Labels */
+  label {
+    font-weight: bold;
+    color: #e0876a;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* 📩 Messages d'erreur */
+  .error-message {
+    text-align: center;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 15px;
+  }
+  
+  /* 📌 Champs de saisie */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #f4a688;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+  
+  /* ✅ Boutons d'action */
+  button {
+    background-color: #e0876a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .quiz-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button:hover {
+    background-color: #d06c52;
+  }
+  
+  /* 🚀 Bouton Supprimer */
+  .delete-course,
+  .delete-quiz {
+    background-color: #d9534f;
+  }
+
+  .delete-course {
+    margin-top: 30px;
+  }
+  
+  .delete-course:hover,
+  .delete-quiz:hover {
+    background-color: #c9302c;
+  }
+  
+  /* 💾 Bouton Sauvegarde */
+  .save-course,
+  .save-quiz {
+    background-color: #5cb85c;
+  }
+
+  .save-course {
+    margin-bottom: 50px;
+  }
+  
+  .save-course:hover,
+  .save-quiz:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* 📌 Style pour les réponses correctes */
+  .correct-manage-answer {
+    border: 2px solid #5cb85c;
+    background-color: #dff0d8;
+  }
+  
+  /* 📝 Séparation entre les quiz */
+  .quiz-container {
+    background: #fff8e1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .quiz-container hr {
+    margin: 15px 0;
+    border: 0.5px solid #f4a688;
+  }
+  

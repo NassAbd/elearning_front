@@ -1,0 +1,32 @@
+/* 📌 Style pour chaque carte de cours */
+.card-container {
+    background-color: #fbefcc;
+    border: 2px solid #f9ccac;
+    border-radius: 8px;
+    padding: 16px;
+    width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🎯 Titre de la carte */
+  .card-container h2 {
+    font-size: 18px;
+    color: #e0876a;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  /* ✍️ Description de la carte */
+  .card-container p {
+    font-size: 14px;
+    color: #7a4a3a;
+    text-align: center;
+  }
+  

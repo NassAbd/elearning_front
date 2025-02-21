@@ -1,0 +1,91 @@
+/* 🎨 Conteneur principal */
+.create-quiz-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  /* 🏆 Titre */
+  .create-quiz-title {
+    text-align: center;
+    color: #e0876a;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* 📩 Message de confirmation ou d'erreur */
+  .create-quiz-message {
+    text-align: center;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 15px;
+  }
+  
+  /* 📝 Formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* 📌 Champs de saisie */
+  .question-input,
+  .propositions-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #e0876a;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #f4a688;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #7a4a3a;
+  }
+  
+  .proposition-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* ➕ Bouton Ajouter */
+  button[type="button"] {
+    background-color: #f4a688;
+    color: white;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #e0876a;
+  }
+  
+  /* ✅ Bouton Soumettre */
+  button[type="submit"] {
+    background-color: #e0876a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #d06c52;
+  }
+  

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createCourse } from "../services/courseApi";
+import "../css/CreateCoursePage.css";
 
 const CreateCoursePage = () => {
   const [title, setTitle] = useState("");
@@ -23,45 +24,50 @@ const CreateCoursePage = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold mb-4">Créer un Cours</h1>
-      {message && <p className="mb-4 text-green-600">{message}</p>}
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block font-semibold">Titre</label>
+    <div className="create-course-container">
+
+      <h1 className="create-course-title">Créer un Cours</h1>
+
+      {message && <p className="create-course-message">{message}</p>}
+
+      <form className="form-container" onSubmit={handleSubmit}>
+
+        <div className="title-input">
+          <label>Titre</label>
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full p-2 border rounded"
             required
           />
         </div>
-        <div className="mb-4">
-            <label className="block font-semibold">Description</label>
+
+        <div className="description-input">
+            <label>Description</label>
           <textarea
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-            className="w-full p-2 border rounded"
             required
             />
         </div>
-        <div className="mb-4">
-          <label className="block font-semibold">Contenu</label>
+
+        <div className="content-input">
+          <label>Contenu</label>
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            className="w-full p-2 border rounded"
             required
           />
         </div>
+
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
         >
           Créer le cours
         </button>
+
       </form>
+
     </div>
   );
 };

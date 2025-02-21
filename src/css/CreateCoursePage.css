@@ -1,0 +1,73 @@
+/* 📌 Conteneur principal */
+.create-course-container {
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+  }
+  
+  /* 🎯 Titre principal */
+  .create-course-title {
+    color: #e0876a;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* ✅ Message de confirmation ou erreur */
+  .create-course-message {
+    text-align: center;
+    color: #e0876a;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* 📌 Formulaire */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 🏷️ Labels */
+  .form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #7a4a3a;
+  }
+  
+  /* ✍️ Champs de texte */
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f4a688;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    color: #7a4a3a;
+    margin-bottom: 15px;
+  }
+  
+  /* 📌 Zone de texte spécifique */
+  .form-container textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* 🎯 Bouton */
+  .form-container button {
+    background-color: #e0876a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #d06c52;
+  }
+  

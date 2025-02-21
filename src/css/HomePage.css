@@ -1,0 +1,35 @@
+/* 🌿 Conteneur principal */
+.home-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* 🎯 Bouton "Créer un cours" */
+  .create-course-button {
+    background-color: #e0876a;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    margin-bottom: 20px;
+  }
+  
+  .create-course-button:hover {
+    background-color: #f4a688;
+    transform: scale(1.05);
+  }
+  
+  /* 📚 Conteneur des cours */
+  .courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+  }
+  

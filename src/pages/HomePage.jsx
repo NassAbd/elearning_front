@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getCourses } from "../services/courseApi";
 import Card from "../components/Card";
 import { useNavigate } from "react-router-dom";
+import "../css/HomePage.css";
 
 const HomePage = () => {
   const [courses, setCourses] = useState([]);
@@ -18,13 +19,15 @@ const HomePage = () => {
   }, [courses]);
 
   return (
-    <div className="p-4">
-      <button onClick={() => navigate('/nouveau-cours')}>Créer un nouveau cours</button>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <div className="home-container">
+      <button className="create-course-button" onClick={() => navigate('/nouveau-cours')}>Créer un nouveau cours</button>
+
+      <div className="courses-container">
         {courses.map((course) => (
-          <Card navigateTo={() => navigate(`/cours/${course._id}`)} key={course._id} title={course.title} description={course.description}/>
+          <Card className="course-card" navigateTo={() => navigate(`/cours/${course._id}`)} key={course._id} title={course.title} description={course.description}/>
         ))}
       </div>
+
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { createQuiz } from "../services/quizApi";
+import "../css/CreateQuizPage.css";
 
 const CreateQuizPage = () => {
   const { id } = useParams();
@@ -11,9 +12,6 @@ const CreateQuizPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    console.log("🚀 ~ handleSubmit ~ id:", id);
-
     
     if ( !question || !answer || propositions.some(p => p === "")) {
       setMessage("Veuillez remplir tous les champs.");
@@ -43,31 +41,33 @@ const CreateQuizPage = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold mb-4">Créer un Quiz</h1>
-      {message && <p className="mb-4 text-green-600">{message}</p>}
+    <div className="create-quiz-container">
+
+      <h1 className="create-quiz-title">Créer un Quiz</h1>
+
+      {message && <p className="create-quiz-message">{message}</p>}
       
       <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block font-semibold">Question</label>
+        <div className="question-input">
+          <label>Question</label>
           <input
             type="text"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            className="w-full p-2 border rounded"
             required
           />
         </div>
 
-        <div className="mb-4">
-          <label className="block font-semibold">Propositions</label>
+        <div className="propositions-input">
+
+          <label>Propositions</label>
+
           {propositions.map((option, index) => (
-            <div key={index} className="flex items-center space-x-2 mb-2">
+            <div key={index} className="proposition-input">
               <input
                 type="text"
                 value={option}
                 onChange={(e) => handleOptionChange(index, e.target.value)}
-                className="w-full p-2 border rounded"
                 required
               />
               <input
@@ -79,15 +79,18 @@ const CreateQuizPage = () => {
               />
             </div>
           ))}
-          <button type="button" onClick={handleAddOption} className="mt-2 text-blue-500">
+
+          <button type="button" onClick={handleAddOption}>
             + Ajouter une option
           </button>
+
         </div>
 
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        <button type="submit">
           Créer le quiz
         </button>
       </form>
+
     </div>
   );
 };

@@ -138,6 +138,16 @@ const ManageCourse = () => {
         />
       </div>
 
+      <div className="course-image">
+        <label>URL de l'image</label>
+        <input
+          type="text"
+          name="imageUrl"
+          value={course?.imageUrl || ""}
+          onChange={handleCourseChange}
+        />
+      </div>
+
       <button
         onClick={handleSaveCourse}
         className="save-course"

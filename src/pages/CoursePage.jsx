@@ -3,6 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { getCourseById } from "../services/courseApi";
 import { getQuizById } from "../services/quizApi";
 import "../css/CoursePage.css";
+import defaultImage from "../assets/default_course_image.jpg";
+
 
 const CoursePage = () => {
   const navigate = useNavigate();
@@ -65,6 +67,7 @@ const CoursePage = () => {
     <div className="course-container">
 
       <h1 className="course-title">{course.title}</h1>
+      <img src={course.imageUrl || defaultImage} className="course-image"/>
       <p className="course-description">{course.description}</p>
       <div className="course-content">
         <p>{course.content}</p>

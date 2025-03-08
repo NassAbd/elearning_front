@@ -6,17 +6,19 @@ const CreateCoursePage = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [content, setContent] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     
     try {
-        const createdCourse = await createCourse({ title, content, description });
+        const createdCourse = await createCourse({ title, content, description, imageUrl });
         setMessage(`Le cours "${createdCourse.title}" a été créé avec succès !`);
         setTitle("");
         setContent("");
         setDescription("");
+        setImageUrl("");
       } catch (error) {
         console.error("Erreur lors de la création du cours :", error);
         setMessage("Une erreur s'est produite lors de la création du cours.");
@@ -57,6 +59,15 @@ const CreateCoursePage = () => {
             value={content}
             onChange={(e) => setContent(e.target.value)}
             required
+          />
+        </div>
+
+        <div className="imageUrl-input">
+          <label>URL de l'image</label>
+          <input
+            type="text"
+            value={imageUrl}
+            onChange={(e) => {setImageUrl(e.target.value)}}
           />
         </div>
 

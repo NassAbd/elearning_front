@@ -1,32 +1,57 @@
 /* 📌 Style pour chaque carte de cours */
 .card-container {
-    background-color: #fbefcc;
-    border: 2px solid #f9ccac;
-    border-radius: 8px;
-    padding: 16px;
-    width: 250px;
-    text-align: left;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-    cursor: pointer;
-  }
-  
-  .card-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* 🎯 Titre de la carte */
-  .card-container h2 {
-    font-size: 18px;
-    color: #e0876a;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-  
-  /* ✍️ Description de la carte */
-  .card-container p {
-    font-size: 14px;
-    color: #7a4a3a;
-    text-align: center;
-  }
-  
+  background-color: #fbefcc;
+  border: 2px solid #f9ccac;
+  border-radius: 8px;
+  width: 250px; /* Taille fixe pour uniformiser les cartes */
+  height: 200px; /* Hauteur fixe pour que toutes les cartes aient la même taille */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📷 Image en arrière-plan qui prend toute la place */
+.card-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Pour que l'image soit en arrière-plan */
+}
+
+/* 📌 Contenu de la carte (titre et description) */
+.card-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.248); /* Fond semi-transparent pour améliorer la lisibilité */
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+/* 🎯 Titre de la carte */
+.card-content h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre pour le texte */
+  -webkit-text-stroke: 0.5px black; /* Bordure noire */
+}
+
+/* ✍️ Description de la carte */
+.card-content p {
+  font-size: 14px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre pour le texte */
+  -webkit-text-stroke: 0.2px black; /* Bordure noire plus fine */
+  color: #e0876a;
+}

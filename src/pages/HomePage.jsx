@@ -24,7 +24,7 @@ const HomePage = () => {
 
       <div className="courses-container">
         {courses.map((course) => (
-          <Card className="course-card" navigateTo={() => navigate(`/cours/${course._id}`)} key={course._id} title={course.title} description={course.description}/>
+          <Card className="course-card" navigateTo={() => navigate(`/cours/${course._id}`)} key={course._id} title={course.title} description={course.description} image={course.imageUrl}/>
         ))}
       </div>
 

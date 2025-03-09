@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_QUIZZES_API_URL;
+const API_URL = process.env.REACT_APP_QUIZZES_API_URL || "https://elearningback-production.up.railway.app/api/quizzes";
 
 // Get all quizzes
 export const getQuizzes = async () => {

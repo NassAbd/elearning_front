@@ -6,7 +6,7 @@ import CreateQuizPage from "./pages/CreateQuizPage";
 import ManageCourse from "./pages/ManageCourse";
 import './App.css';
 
-function App() {
+function App() {  
   return (
     <Router>
       <div className="container mx-auto p-4">

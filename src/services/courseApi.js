@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_COURSES_API_URL || "https://elearningback-production.up.railway.app/api/courses";
+const API_URL = "http://localhost:5000/api/courses";
 console.log("API_URL : ", API_URL);
 
 // Get all courses

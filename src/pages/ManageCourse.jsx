@@ -122,7 +122,8 @@ const ManageCourse = () => {
 
       <div className="course-description">
         <label>Description</label>
-        <textarea
+        <input
+          type="text"
           name="description"
           value={course?.description || ""}
           onChange={handleCourseChange}

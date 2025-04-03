@@ -10,17 +10,18 @@
   .manage-quiz-title {
     text-align: center;
     color: #e0876a;
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 15px;
   }
   
   /* 📝 Labels */
-  label {
-    font-weight: bold;
-    color: #e0876a;
-    display: block;
-    margin-bottom: 5px;
-  }
+label {
+  font-weight: bold;
+  color: #e0876a;
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
   
   /* 📩 Messages d'erreur */
   .error-message {

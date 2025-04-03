@@ -5,6 +5,26 @@
     padding: 20px;
     text-align: center;
   }
+
+  .home-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50; /* Bleu foncé élégant */
+    letter-spacing: 1.5px;
+    position: relative;
+  }
+  
+  .home-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e0876a; /* Bleu vif pour un accent visuel */
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
   
   /* 🎯 Bouton "Créer un cours" */
   .create-course-button {
@@ -23,6 +43,34 @@
     background-color: #f4a688;
     transform: scale(1.05);
   }
+
+  .home-subtitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: #34495e; /* Bleu-gris élégant */
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .home-subtitle::before {
+    content: "📚"; /* Icône de livre avant le titre */
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  
+  .home-subtitle::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #f4a688; /* Bleu dynamique */
+    margin: 8px auto 0;
+    border-radius: 2px;
+    opacity: 0.8;
+  }
   
   /* 📚 Conteneur des cours */
   .courses-container {
@@ -31,5 +79,13 @@
     gap: 20px;
     justify-content: center;
     padding: 10px;
+  }
+
+  .no-courses-message {
+    font-size: 18px;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
   }
   

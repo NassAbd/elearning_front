@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# 🏫 eLearning  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est le frontend d'une plateforme d'apprentissage en ligne développée avec **React**. Il permet aux utilisateurs de créer, d'accéder et gérer des cours en ligne.  
 
-## Available Scripts
+## ✨ Fonctionnalités Implémentées  
 
-In the project directory, you can run:
+### 🎓 Gestion des cours  
+- Affichage de la liste des cours disponibles  
+- Consultation des détails d’un cours (titre, description, contenu, image)
 
-### `npm start`
+### 📝 Gestion des quiz  
+- Intégration de quiz pour évaluer les connaissances des apprenants  
+- Questions à choix multiples
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎨 Expérience utilisateur optimisée  
+- Interface ergonomique et responsive pour une utilisation sur mobile et desktop  
+- Utilisation de composants réutilisables pour une navigation fluide  
+- Thème moderne avec une hiérarchie visuelle claire  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔗 Intégration API  
+- Communication avec un backend via des requêtes **REST API**  
+- Récupération dynamique des cours et des quiz  
+- Gestion des erreurs et affichage de messages d’information pour l’utilisateur  
 
-### `npm test`
+## 📌 Technologies utilisées  
+- **React.js** – Framework frontend  
+- **React Router** – Gestion de la navigation  
+- **Axios** – Requêtes HTTP vers l’API backend  
+- **CSS Modules** – Gestion du style et design responsive  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📷 Aperçus de l'application  
+![Elearning Screenshot](./list-courses.png)
+![Elearning Screenshot](./create-course.png)
+![Elearning Screenshot](./course-content.png)
+![Elearning Screenshot](./quiz-content.png)
+![Elearning Screenshot](./create-quiz.png)
+![Elearning Screenshot](./change-course.png)
+![Elearning Screenshot](./change-quiz.png)
+ 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📜 Licence  
+Ce projet est sous licence **MIT**. Consultez le fichier [LICENSE](LICENSE) pour plus d’informations.

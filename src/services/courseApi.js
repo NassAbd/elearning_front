@@ -7,7 +7,7 @@ console.log("API_URL : ", API_URL);
 export const getCourses = async () => {
     try {
       const response = await axios.get(`${API_URL}`);
-      return response.data; // Assure-toi que c'est bien un tableau !
+      return response.data;
     } catch (error) {
       console.error("Erreur lors de la récupération des cours :", error);
       return [];

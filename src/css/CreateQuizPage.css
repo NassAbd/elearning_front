@@ -1,11 +1,9 @@
-/* 🎨 Conteneur principal */
 .create-quiz-container {
     padding: 20px;
     max-width: 600px;
     margin: 20px auto;
   }
   
-  /* 🏆 Titre */
   .create-quiz-title {
     text-align: center;
     color: #e0876a;
@@ -13,7 +11,6 @@
     margin-bottom: 15px;
   }
   
-  /* 📩 Message de confirmation ou d'erreur */
   .create-quiz-message {
     text-align: center;
     font-weight: bold;
@@ -21,14 +18,12 @@
     margin-bottom: 15px;
   }
   
-  /* 📝 Formulaire */
   form {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  /* 📌 Champs de saisie */
   .question-input,
   .propositions-input {
     display: flex;
@@ -55,7 +50,6 @@
     gap: 10px;
   }
   
-  /* ➕ Bouton Ajouter */
   button[type="button"] {
     background-color: #f4a688;
     color: white;
@@ -72,7 +66,6 @@
     background-color: #e0876a;
   }
   
-  /* ✅ Bouton Soumettre */
   button[type="submit"] {
     background-color: #e0876a;
     color: white;

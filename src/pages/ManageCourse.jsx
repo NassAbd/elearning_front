@@ -14,7 +14,6 @@ const ManageCourse = () => {
   const [errorCourse, setErrorCourse] = useState("");
   const [errorQuiz, setErrorQuiz] = useState("");
 
-  // Charger le cours
   useEffect(() => {
     const fetchCourse = async () => {
       try {
@@ -40,12 +39,10 @@ const ManageCourse = () => {
     }
   };
 
-  // Charger les quiz
   useEffect(() => {
     fetchQuizzes();
   }, [id]);
 
-  // Modifier le cours
   const handleCourseChange = (e) => {
     setCourse({ ...course, [e.target.name]: e.target.value });
   };
@@ -59,7 +56,6 @@ const ManageCourse = () => {
     }
   };
 
-  // Modifier une question du quiz
   const handleQuizChange = (quizIndex, field, value) => {
     const updatedQuizzes = [...quizzes];
     updatedQuizzes[quizIndex] = { ...updatedQuizzes[quizIndex], [field]: value };
@@ -75,20 +71,17 @@ const ManageCourse = () => {
     }
   };
 
-  // Supprimer une question spécifique du quiz
   const handleDeleteQuiz = async (quizId) => {
     try {
       await deleteQuiz(quizId);
       setQuizzes(quizzes.filter((quiz) => quiz.id !== quizId));
       alert("Question supprimée !");
-      // Recharger les quiz
         fetchQuizzes();
     } catch (err) {
       setErrorQuiz("Erreur lors de la suppression de la question.");
     }
   };
 
-  // Supprimer le cours et ses quiz
   const handleDeleteCourse = async () => {
     if (window.confirm("Êtes-vous sûr de vouloir supprimer ce cours ?")) {
       try {
@@ -109,7 +102,6 @@ const ManageCourse = () => {
 
       <h1 className="manage-course-title">Gestion du Cours</h1>
 
-      {/* Modification du cours */}
       <div className="course-title">
         <label>Titre du cours</label>
         <input
@@ -156,7 +148,6 @@ const ManageCourse = () => {
         Enregistrer les modifications
       </button>
 
-      {/* Gestion des quiz */}
       {loadingQuiz ? (
 
         <p>Chargement du quiz...</p>

@@ -1,4 +1,3 @@
-/* 📌 Conteneur principal */
 .course-container {
     padding: 20px;
     width: 90%;
@@ -6,7 +5,6 @@
     margin: 40px auto;
   }
   
-  /* 🎯 Titre du cours */
   .course-title {
     color: #e0876a;
     text-align: center;
@@ -21,7 +19,6 @@
     margin-bottom: 20px;
   }
   
-  /* 📄 Description */
   .course-description {
     font-size: 18px;
     color: #7a4a3a;
@@ -29,7 +26,6 @@
     margin-bottom: 20px;
   }
   
-  /* 📚 Contenu du cours */
   .course-content {
     padding: 15px;
     font-size: 16px;
@@ -37,7 +33,6 @@
     margin-bottom: 20px;
   }
   
-  /* 🎯 Boutons */
   .course-container button {
     background-color: #e0876a;
     color: white;
@@ -57,13 +52,11 @@
     background-color: #d06c52;
   }
   
-  /* 📌 Conteneur des quiz */
   .quizzes-container {
     margin-top: 20px;
     padding: 15px;
   }
   
-  /* 🏆 Titre Quiz */
   .quizzes-title {
     color: #7a4a3a;
     font-size: 22px;
@@ -71,7 +64,6 @@
     text-align: center;
   }
   
-  /* 📌 Carte d'un quiz */
   .quiz-card {
     background-color: #fffcf5;
     border: 2px solid #f4a688;
@@ -81,7 +73,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* 🏆 Question */
   .quiz-question {
     font-size: 18px;
     font-weight: bold;
@@ -89,7 +80,6 @@
     margin-bottom: 10px;
   }
   
-  /* 🎯 Propositions */
   .propositions-container {
     display: flex;
     flex-direction: column;
@@ -107,7 +97,6 @@
     margin-right: 10px;
   }
 
-  /* 📌 Conteneur des boutons du cours */
 .course-buttons {
     display: flex;
     justify-content: center;
@@ -123,7 +112,6 @@
     background-color: #d06c52;
   }
   
-  /* ✅❌ Résultat Quiz */
   .correct-answer {
     color: green;
     font-weight: bold;
@@ -136,7 +124,6 @@
     margin-top: 10px;
   }
   
-  /* 🔄 Chargement / Erreurs */
   .loading-quiz,
   .error-quiz {
     text-align: center;

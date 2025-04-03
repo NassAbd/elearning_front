@@ -10,15 +10,14 @@ const CoursePage = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [course, setCourse] = useState(null);
-  const [quizzes, setQuizzes] = useState([]); // Stocke tous les quiz
+  const [quizzes, setQuizzes] = useState([]);
   const [loadingCourse, setLoadingCourse] = useState(true);
   const [loadingQuiz, setLoadingQuiz] = useState(true);
   const [errorCourse, setErrorCourse] = useState("");
   const [errorQuiz, setErrorQuiz] = useState("");
   
-  const [quizStates, setQuizStates] = useState({}); // Gère chaque réponse indépendamment
+  const [quizStates, setQuizStates] = useState({});
 
-  // Fonction pour soumettre la réponse d'une question
   const handleSubmitAnswer = (quizIndex, correctAnswer) => {
     setQuizStates((prevState) => ({
       ...prevState,
@@ -30,7 +29,6 @@ const CoursePage = () => {
     }));
   };
 
-  // Charger le cours
   useEffect(() => {
     const fetchCourse = async () => {
       try {
@@ -45,7 +43,6 @@ const CoursePage = () => {
     fetchCourse();
   }, [id]);
 
-  // Charger les quiz
   useEffect(() => {
     const fetchQuizzes = async () => {
       try {
@@ -73,7 +70,6 @@ const CoursePage = () => {
         <p>{course.content}</p>
       </div>
 
-      {/* Affichage des quiz */}
       {loadingQuiz ? (
 
           <p className="loading-quiz">Chargement du quiz...</p>

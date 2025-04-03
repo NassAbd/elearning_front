@@ -1,11 +1,9 @@
-/* 🎨 Conteneur principal */
 .manage-course-container {
     padding: 20px;
     max-width: 700px;
     margin: 20px auto;
   }
   
-  /* 🏆 Titres */
   .manage-course-title,
   .manage-quiz-title {
     text-align: center;
@@ -14,7 +12,6 @@
     margin-bottom: 15px;
   }
   
-  /* 📝 Labels */
 label {
   font-weight: bold;
   color: #e0876a;
@@ -23,7 +20,6 @@ label {
   text-align: center;
 }
   
-  /* 📩 Messages d'erreur */
   .error-message {
     text-align: center;
     font-weight: bold;
@@ -31,7 +27,6 @@ label {
     margin-bottom: 15px;
   }
   
-  /* 📌 Champs de saisie */
   input[type="text"],
   textarea {
     width: 100%;
@@ -47,7 +42,6 @@ label {
     min-height: 60px;
   }
   
-  /* ✅ Boutons d'action */
   button {
     background-color: #e0876a;
     color: white;
@@ -70,7 +64,6 @@ label {
     background-color: #d06c52;
   }
   
-  /* 🚀 Bouton Supprimer */
   .delete-course,
   .delete-quiz {
     background-color: #d9534f;
@@ -85,7 +78,6 @@ label {
     background-color: #c9302c;
   }
   
-  /* 💾 Bouton Sauvegarde */
   .save-course,
   .save-quiz {
     background-color: #5cb85c;
@@ -100,13 +92,11 @@ label {
     background-color: #4cae4c;
   }
   
-  /* 📌 Style pour les réponses correctes */
   .correct-manage-answer {
     border: 2px solid #5cb85c;
     background-color: #dff0d8;
   }
   
-  /* 📝 Séparation entre les quiz */
   .quiz-container {
     background: #fff8e1;
     padding: 15px;
